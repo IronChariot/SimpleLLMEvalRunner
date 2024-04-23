@@ -1,0 +1,48 @@
+Here is a puzzle scenario:
+
+You see a moment in time: a man with brown hair appears to be pushing a man with black hair off a cliff. In the background, you can see two islets in the sea. Nearby the men on the cliff next to a tent, there are two bags. 
+
+The yellow bag contains two bags of gems, and a small pack of tabacco.
+The grey bag contains one bag of gems, a golden statuette, and a small bag of medical instruments and medicine.
+
+The brown haired man is saying "I knew what you were scheming, you fiend!"
+
+The brown haired man has the following items on him:
+- A pipe
+- A dagger
+- A contract
+
+The black haired man has the following items on him:
+- A scalpel
+- A medicine bottle
+- Another copy of the same contract that the brown haired man has
+- A map of an island, with the following details:
+	- At the centre of the island is a cross marked "Ruins of Xenopolis"
+	- To the east, next to a small islet off the coast of the main island, is "Bay of Shadows"
+	- To the west, next to two small islets off the coast of the main island, is "Horn of Thumb"
+	- To the north, at the tip of the main island with no marked features nearby, is "Horn of Finger"
+
+The contract that both men hold has the following text:
+"January 5, 1742
+
+Both parties agree to these terms for the expedition to Monkey Paw Island:
+
+Albert Cloudsley has rights to two thirds of all valuables for funding the expedition.
+
+Oberon Geller has rights to one third of all valuables and any golden statues found, for providing the map to the expedition site.
+
+Doctor
+Oberon
+Geller
+
+Esquire
+Albert
+Cloudsley"
+
+From the above information, solve the following problems:
+1) Where is the men's camp? Answer of the form "The men's camp is at the X of Y"
+2) What is the brown haired man's full name? Answer of the form "The brown haired man's full name is X Y"
+3) What is the black haired man's full name? Answer of the form "The black haired man's full name is X Y"
+4) What happened? Answer of the form "A B pushed C D from a cliff in the E of F on Monkey Paw Island."
+
+Think the problem through step-by-step before answering any question.

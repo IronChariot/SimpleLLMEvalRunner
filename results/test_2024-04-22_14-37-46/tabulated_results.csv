@@ -1,0 +1,7 @@
+model,set_display_name,case_display_name,evaluation_type,evaluation_score
+OpenAI GPT-4 (2024),The Case of the Golden Idol,Case 1,contains,10.0
+OpenAI GPT-4 (2024),The Case of the Golden Idol,Case 2,manual,5
+OpenAI GPT-4 (2024),Formatted Multi-Step Logic,Freddie's Mum,exact,10
+Claude 3 Opus,The Case of the Golden Idol,Case 1,contains,10.0
+Claude 3 Opus,The Case of the Golden Idol,Case 2,manual,5
+Claude 3 Opus,Formatted Multi-Step Logic,Freddie's Mum,exact,0

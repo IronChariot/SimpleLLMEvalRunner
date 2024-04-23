@@ -1,0 +1,19 @@
+{
+    "test_name": "test_{date}_{time}",
+    "models": [
+        {
+            "display_name": "OpenAI GPT-4 (2024)",
+            "model_name": "gpt-4-turbo-2024-04-09",
+            "api": "openai",
+            "temperature": 0.0,
+            "max_tokens": 4095
+        },
+        {
+            "display_name": "Claude 3 Opus",
+            "model_name": "claude-3-opus-20240229",
+            "api": "anthropic",
+            "temperature": 0.0,
+            "max_tokens": 4000
+        }
+    ]
+}

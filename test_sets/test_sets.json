@@ -1,0 +1,61 @@
+{
+    "test_sets": [ 
+        {
+            "set_name": "tcotgi",
+            "set_display_name": "The Case of the Golden Idol",
+            "test_cases": [
+                {
+                    "name": "case1",
+                    "display_name": "Case 1",
+                    "description": "The first level from The Case of the Golden Idol video game, transcribed into text. Covers very basic deduction with multiple clues pointing to correct solutions, direct pattern matching, and no red herrings.",
+                    "evaluation": "contains",
+                    "evaluation_matches": [
+                        "The men's camp is at the Horn of Thumb",
+                        "The brown haired man's full name is Albert Cloudsley",
+                        "The black haired man's full name is Oberon Geller",
+                        "Albert Cloudsley pushed Oberon Geller from a cliff in the Horn of Thumb on Monkey Paw Island"
+                    ],
+                    "system_prompt": "",
+                    "difficulty_ratings": {
+                        "Length of Context": 3,
+                        "Reasoning Depth": 2,
+                        "Instruction Compliance": 3
+                    }
+                },
+                {
+                    "name": "case2",
+                    "display_name": "Case 2",
+                    "description": "The second level from The Case of the Golden Idol video game, transcribed into text. Covers basic deduction with clues pointing to correct solutions, mixed direct and indirect pattern matching, and one red herring.",
+                    "evaluation": "manual",
+                    "system_prompt": "",
+                    "difficulty_ratings": {
+                        "Length of Context": 3,
+                        "Reasoning Depth": 3,
+                        "Instruction Compliance": 2
+                    }
+                }
+            ]
+        },
+        {
+            "set_name": "formatted_logic",
+            "set_display_name": "Formatted Multi-Step Logic",
+            "test_cases": [
+                {
+                    "name": "problem1",
+                    "display_name": "Freddie's Mum",
+                    "description": "Question aimed to require multi-step logic (one hop) to solve, without explicit CoT.",
+                    "evaluation": "exact",
+                    "evaluation_matches": [
+                        "Jer Bulsara"
+                    ],
+                    "system_prompt": "",
+                    "difficulty_ratings": {
+                        "Length of Context": 1,
+                        "Reasoning Depth": 2,
+                        "Instruction Compliance": 2
+                    }
+                }
+            ]
+        }
+    ]
+}
