@@ -1,6 +1,6 @@
 # Simple LLM Eval Runner
 
-This project was created to write and test new evals against arbitrary LLMs as easily as possible. The responses can be evaluated automatically if an eval has a set-in-stone expected output, or evaluated with a model of your choice, or manually evaluated. Results will be stored in a separate folder tree with full responses of each eval for each model, as well as summaries of scores.
+This project was created to write and test new evals against arbitrary LLMs as easily as possible. The responses can be evaluated automatically if an eval has a set-in-stone expected output, or manually evaluated. Results will be stored in a separate folder tree with full responses of each eval for each model, as well as summaries of scores.
 
 Made in Python with just a couple of JSON files to define the large language models you want to test and the evals you want to run. When you want to add a new model to test, either find the corresponding Python file to use an existing API, or create a new Python file in the model_apis directory for the new API you want to use, and add it to the models array in the test_definition.json file. When adding more evals, add them to the cases.json file, along a text file containing the actual prompt.
 
@@ -14,8 +14,6 @@ Evaluation metric is a score from 0 to 10. For perfect-match evaluations, this w
 - 5: Gets it about equal parts right and wrong
 - 6-9: Gets the reasoning/recall mostly right, though might have a slight flaw in some of the reasoning
 - 10: Perfect reasoning/recall leading to a correct answer
-
-TODO: When doing manual evaluation, instead of giving a 0-10 score, you can instead start typing a follow-up question, in case you want to maybe double check the LLM's understanding of something in the eval, or the 'reasoning' for its answer. The response will then be displayed, at which point you can then give your rating or ask more questions. The follow-up questions and responses will be included in the record of the responses.
 
 # Difficulty Ratings:
 
@@ -45,7 +43,9 @@ The difficulty rating is based on the intricacies of the required output. Requir
 Example: asking for a direct answer without any discussion, CoT or any extraneous text at all would probably be a rating of 2 or 3 (one or two points of difficulty for a single answer format, one or two points of difficulty for following the instructions of not saying anything except for the answer).
 
 ## TODO
-Create a view of the results in more details, specifically a cross reference of how each model (down the left) do against each problem (across the top), as well as a view of the results where we should how well each model does in each of the difficulty categories.
+- [ ] Create a view of the results in more details, specifically a cross reference of how each model (down the left) do against each problem (across the top), as well as a view of the results where we should how well each model does in each of the difficulty categories.
+- [ ] When doing manual evaluation, instead of giving a 0-10 score, you can instead start typing a follow-up question, in case you want to maybe double check the LLM's understanding of something in the eval, or the 'reasoning' for its answer. The response will then be displayed, at which point you can then give your rating or ask more questions. The follow-up questions and responses will be included in the record of the responses.
+- [ ] Allow a chosen LLM to evaluate a response, instead of having the user do it. Should use word-type evaluation scores that we can translate to a 0-10 score, rather than asking for a numeric score directly.
 
 ## Thanks
 
