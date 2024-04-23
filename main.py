@@ -1,4 +1,4 @@
-import json
+import yaml
 import os
 import datetime
 from model_apis import groq, openai, anthropic
@@ -27,12 +27,13 @@ def run_test(model_name, temperature, max_tokens, api_name, prompt, system_promp
 
 def main():
     # Read the test definition JSON file
-    with open("test_definition.json") as file:
-        test_definition = json.load(file)
+    with open("test_definition.yml") as file:
+        test_definition_yml = yaml.safe_load(file)
+        test_definition = test_definition_yml["test"]
     
     # Read the test cases JSON file
-    with open("test_sets/test_sets.json") as file:
-        test_sets = json.load(file)
+    with open("test_sets/test_sets.yml") as file:
+        test_sets = yaml.safe_load(file)
 
     # Extract the test name from the test definition, create a folde for it in the results folder
     test_name = test_definition["test_name"]
@@ -77,7 +78,6 @@ def main():
                 case_id = case["name"]
                 case_display_name = case["display_name"]
                 case_evaluation = case["evaluation"]
-                # With JSON, if the evaluation_matches is missing, then trying to get case["evaluation_matches"] causes an error
                 if "evaluation_matches" in case:
                     case_evaluation_matches = case["evaluation_matches"]
                 case_system_prompt = case["system_prompt"]
@@ -101,17 +101,17 @@ def main():
                 if case_evaluation == "contains":
                     score = 0
                     for match in case_evaluation_matches:
-                        if match in response:
+                        if match.lower() in response.lower(): # Assuming matches can be case-insensitive
                             score += 1
                     eval_score = (score / len(case_evaluation_matches)) * 10
-                elif case_evaluation == "exact": # test against lower case, I don't think we need to worry about capitalization here
-                    if case_evaluation_matches[0].lower() == response.lower():
+                elif case_evaluation == "exact":
+                    if case_evaluation_matches[0].lower() == response.lower(): # Assuming matches can be case-insensitive
                         eval_score = 10
                 else: # Manual evaluation, show the user the prompt and response, then ask them to input a number between 0 and 10
-                    print("----------------------PROMPT----------------------")
+                    print("----------------------=====PROMPT=====----------------------")
                     md = Markdown(prompt)
                     console.print(md)
-                    print("----------------------RESPONSE---------------------")
+                    print("----------------------====RESPONSE====----------------------")
                     md = Markdown(response)
                     console.print(md)
                     # Use a loop to make sure we get a valid answer from the user, even if they put a number outside the range or a non-integer
