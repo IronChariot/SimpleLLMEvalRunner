@@ -1,6 +1,6 @@
 # Simple LLM Eval Runner
 
-This project was create to easily create new evals, and run them against LLMs are easily as possible. The responses can be evaluated automatically if an eval has a set-in-stone expected output, or evaluated with a model of your choice, or manually evaluated. Results will be stored in a separate folder tree with full responses of each eval for each model, as well as summaries of scores.
+This project was created to write and test new evals against arbitrary LLMs as easily as possible. The responses can be evaluated automatically if an eval has a set-in-stone expected output, or evaluated with a model of your choice, or manually evaluated. Results will be stored in a separate folder tree with full responses of each eval for each model, as well as summaries of scores.
 
 Made in Python with just a couple of JSON files to define the large language models you want to test and the evals you want to run. When you want to add a new model to test, either find the corresponding Python file to use an existing API, or create a new Python file in the model_apis directory for the new API you want to use, and add it to the models array in the test_definition.json file. When adding more evals, add them to the cases.json file, along a text file containing the actual prompt.
 
