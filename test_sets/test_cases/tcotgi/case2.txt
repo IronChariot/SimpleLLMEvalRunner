@@ -1,10 +1,10 @@
 Here is a puzzle scenario:
 
-You see the inside of a bedchamber, with a large window, a bed, a small desk against a wall, a four metre tall bookcase full of books, and a door.
+You see the inside of a bedchamber, with a large window, a bed against the right wall, a small desk against a wall in the middle, a four metre tall bookcase full of books next to the desk, and a door leading out, on the left of the chamber.
 
-On the bed is a man with ashen skin who is not breathing, and whose head is badly wounded. The head wound is very bloody, and a trail of blood is visible between where he is on the bed and the door to the chamber. The man is wearing a brown outfit, and a ring with a ruby.
+On the bed is a man with ashen skin who is not breathing, and whose head is badly wounded. The head wound is very bloody, and a trail of blood is visible between where he is on the bed and the door to the chamber, including under the door. The man is wearing a brown outfit, and a ring with a ruby.
 
-Next to the bed is a ladder, clearly intended to help reach books higher in the bookshelf. Just above the ladder is a book half pulled out of the bookcase, entitled "Lead Poisoning" by Henry Clover.
+Next to the bed is a ladder leaning against the tall bookcase. Just above the ladder is a book half pulled out of the bookcase, entitled "Lead Poisoning" by Henry Clover.
 
 On the wall above the desk are the following:
 - A portrait of a wealthy man dressed in a blue outfit, holding a glass of wine and a knife, with a small roast chicken on a plate before him, smiling.

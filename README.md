@@ -1,4 +1,4 @@
-# Simple Eval Runner
+# Simple LLM Eval Runner
 
 This project was create to easily create new evals, and run them against LLMs are easily as possible. The responses can be evaluated automatically if an eval has a set-in-stone expected output, or evaluated with a model of your choice, or manually evaluated. Results will be stored in a separate folder tree with full responses of each eval for each model, as well as summaries of scores.
 

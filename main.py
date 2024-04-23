@@ -89,7 +89,7 @@ def main():
                 with open(prompt_file) as file:
                     prompt = file.read()
 
-                print(f"Running test case '{case_display_name}' in set '{set_name}' against the {display_name} model...")
+                print(f"Running test case '{case_display_name}' in set '{set_display_name}' against the {display_name} model...")
             
                 # Run the test for the current model and test case, and save the response to file
                 response = run_test(model_name, temperature, max_tokens, api_name, prompt, case_system_prompt)
