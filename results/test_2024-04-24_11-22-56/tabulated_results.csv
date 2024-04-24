@@ -1,0 +1,28 @@
+model,set_display_name,case_display_name,evaluation_type,evaluation_score
+Llama3-70b,The Case of the Golden Idol,Case 1,contains,7.5
+Llama3-70b,The Case of the Golden Idol,Case 2,manual,8
+Llama3-70b,The Case of the Golden Idol,Case 2 (with theory-building prompt),manual,7
+Llama3-70b,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (1 hidden step),exact,0
+Llama3-70b,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (2 hidden steps),exact,0
+Llama3-70b,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (3 hidden steps),exact,0
+Llama3-70b,Multi-Step or Multi-Clue Logic without Chain of Thought,Peruvian Animal,exact,10
+Llama3-70b,Multi-Step or Multi-Clue Logic without Chain of Thought,Inglourious Actor,exact,10
+Llama3-70b,Multi-Step or Multi-Clue Logic without Chain of Thought,Greek Mythological Creature,exact,10
+OpenAI GPT-3.5-Turbo,The Case of the Golden Idol,Case 1,contains,5.0
+OpenAI GPT-3.5-Turbo,The Case of the Golden Idol,Case 2,manual,5
+OpenAI GPT-3.5-Turbo,The Case of the Golden Idol,Case 2 (with theory-building prompt),manual,3
+OpenAI GPT-3.5-Turbo,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (1 hidden step),exact,10
+OpenAI GPT-3.5-Turbo,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (2 hidden steps),exact,0
+OpenAI GPT-3.5-Turbo,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (3 hidden steps),exact,10
+OpenAI GPT-3.5-Turbo,Multi-Step or Multi-Clue Logic without Chain of Thought,Peruvian Animal,exact,10
+OpenAI GPT-3.5-Turbo,Multi-Step or Multi-Clue Logic without Chain of Thought,Inglourious Actor,exact,10
+OpenAI GPT-3.5-Turbo,Multi-Step or Multi-Clue Logic without Chain of Thought,Greek Mythological Creature,exact,10
+Claude 3 Haiku,The Case of the Golden Idol,Case 1,contains,5.0
+Claude 3 Haiku,The Case of the Golden Idol,Case 2,manual,2
+Claude 3 Haiku,The Case of the Golden Idol,Case 2 (with theory-building prompt),manual,2
+Claude 3 Haiku,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (1 hidden step),exact,0
+Claude 3 Haiku,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (2 hidden steps),exact,0
+Claude 3 Haiku,Multi-Step or Multi-Clue Logic without Chain of Thought,multi-step logic (3 hidden steps),exact,0
+Claude 3 Haiku,Multi-Step or Multi-Clue Logic without Chain of Thought,Peruvian Animal,exact,10
+Claude 3 Haiku,Multi-Step or Multi-Clue Logic without Chain of Thought,Inglourious Actor,exact,0
+Claude 3 Haiku,Multi-Step or Multi-Clue Logic without Chain of Thought,Greek Mythological Creature,exact,10

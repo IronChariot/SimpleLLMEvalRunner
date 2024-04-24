@@ -1,0 +1,1 @@
+What is the name of the mother of the lead singer of the band 'Queen'? Do not include any reasoning or discussion, nor any decorations around the answer itself. Simply output the name with no punctuation or anything else.

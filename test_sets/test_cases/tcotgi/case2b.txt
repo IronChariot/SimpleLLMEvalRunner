@@ -1,0 +1,52 @@
+Here is a puzzle scenario:
+
+You see the inside of a bedchamber, with a large window, a bed against the right wall, a small desk against a wall in the middle, a four metre tall bookcase full of books next to the desk, and a door leading out, on the left of the chamber.
+
+On the bed is a man with ashen skin who is not breathing, and whose head is badly wounded. The head wound is very bloody, and a trail of blood is visible between where he is on the bed and the door to the chamber, including under the door. The man is wearing a brown outfit, and a ring with a ruby.
+
+Next to the bed is a ladder leaning against the tall bookcase. Just above the ladder is a book half pulled out of the bookcase, entitled "Lead Poisoning" by Henry Clover.
+
+On the wall above the desk are the following:
+- A portrait of a wealthy man dressed in a blue outfit, holding a glass of wine and a knife, with a small roast chicken on a plate before him, smiling.
+- A calendar, showing the current date as 23rd of August.
+- A map of a small area of countryside, with three labelled buildings:
+	- 1. Woodshire - the building is shown next to mountains
+	- 2. Crowtower - the building is shown next to a few trees
+	- 3. Blackfield - the building is shown with a river on one side, and a dense forest on the other
+
+On the desk are the following items:
+- A pen and ink
+- A page with the following text written: "Spontaneous Combustion: I, Sebastian Cloudsley, will share my humble contribution to the science of anatomy and chemistry."
+- A diary, with the following text as the last entry:
+"August 22, 1786
+12:00 Woke up. A beautiful day!
+12:30 Washed and dressed in my dining attire.
+14:00 Had a beautiful roast duck for lunch.
+16:00 Changed to my hunting attire.
+17:00 Rode to hunt badgers. Had no luck today and returned home.
+18:00 Changed to my researching attire.
+19:00 Changed to my dining attire.
+20:00 Had a tasty beef loin for supper.
+22:30 Filled in my diary and went to bed to continue reading for my research."
+
+Next to the desk is a chair with a white outfit hanging on the back. The white outfit has many strange yellow splotches on it, and a couple of strange instruments coming out of one pocket.
+
+Outside the large window, you can see a body of water with greenery beyond it, and a boat sailing on the water. Between the water and the building, a horse is running past with a saddle on.
+
+On a small pedestal next to the door of the room is a golden statuette. On the wall above the bed is a red mask. On a shelf above the bed is a yellow outfit.
+
+From the above information, solve the following problems:
+1) What type of attire is the blue outfit?
+2) What type of attire is the white outfit?
+3) What type of attire is the brown outfit?
+4) What is the full name of the man on the bed?
+5) What is the name of the building we are in?
+5) What happened? Answer of the form "A B, Lord of C, passed away in his bed. The cause of death was a D E which occurred when he fell from a F while he was G."
+
+Begin by producing multiple theories of what the answer could be for each question, based on what you can see. 
+The puzzle is presented in such a way that you have all the information you need to answer each question, so do not propose any theories saying that the answer cannot be known.
+Go through every fact presented in the description of the scenario, noting whether it backs up or contradicts any of your theories.
+Finally, assess, based on the evidence, which theory is most likely for each question. 
+Only then should you attempt to answer the questions. 
+If you feel like you do not have enough information, make your best guess.
+There may be red herrings and distractions, but small details may also be important to lead to the correct answers.

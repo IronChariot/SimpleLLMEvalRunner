@@ -1,0 +1,1 @@
+This person starred in the 2009 movie "Inglourious Basterds". They have won at least one Oscar. They were not born in the USA. Who is this person? Do not include any reasoning or discussion, nor any decorations around the answer itself. Simply output the name with no punctuation or anything else.

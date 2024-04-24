@@ -1,0 +1,1 @@
+There is a mythological creature which originates from Greek mythology. It was defeated by a hero. It has a connection to felines. It is humanoid with certain non-human features. What is this creature? Do not include any reasoning or discussion, nor any decorations around the answer itself. Simply output the answer as succinctly as possible with no punctuation or anything else.

@@ -8,7 +8,7 @@ test_sets:
           basic deduction with multiple clues pointing to correct solutions, direct pattern matching, and no red
           herrings.
         evaluation: contains
-        evaluation_matches:
+        evaluation_answers:
           - The men's camp is at the Horn of Thumb
           - The brown haired man's full name is Albert Cloudsley
           - The black haired man's full name is Oberon Geller
@@ -24,22 +24,101 @@ test_sets:
           deduction with clues pointing to correct solutions, mixed direct and indirect pattern matching, and one red
           herring.
         evaluation: manual
+        evaluation_answers:
+          - The blue attire is the dinning attire.
+          - The white attire is the research attire.
+          - The brown attire is the hunting attire.
+          - The full name of the man on the bed is Sebastian Cloudsley.
+          - Sebastian Cloudsley, Lord of Blackfield, passed away in his bed. The cause of death was a head wound which occurred when he fell from a horse while he was hunting.
         system_prompt: ""
         difficulty_ratings:
           Length of Context: 3
-          Reasoning Depth: 3
+          Reasoning Depth: 5
           Instruction Compliance: 2
-  - set_name: formatted_logic
-    set_display_name: Formatted Multi-Step Logic
+      - name: case2b
+        display_name: Case 2 (with theory-building prompt)
+        description: The second level from The Case of the Golden Idol video game, transcribed into text. Covers basic
+          deduction with clues pointing to correct solutions, mixed direct and indirect pattern matching, and one red
+          herring. Prompt instructs the model to reason through the problem by coming up with multiple theories.
+        evaluation: manual
+        evaluation_answers:
+          - The blue attire is the dinning attire.
+          - The white attire is the research attire.
+          - The brown attire is the hunting attire.
+          - The full name of the man on the bed is Sebastian Cloudsley.
+          - Sebastian Cloudsley, Lord of Blackfield, passed away in his bed. The cause of death was a head wound which occurred when he fell from a horse while he was hunting.
+        system_prompt: ""
+        difficulty_ratings:
+          Length of Context: 3
+          Reasoning Depth: 5
+          Instruction Compliance: 2
+  - set_name: no_cot_logic
+    set_display_name: Multi-Step or Multi-Clue Logic without Chain of Thought
     test_cases:
-      - name: problem1
-        display_name: Freddie's Mum
-        description: Question aimed to require multi-step logic (one hop) to solve, without explicit CoT.
+      - name: msl1
+        display_name: multi-step logic (1 hidden step)
+        description: Question aimed to require multi-step logic (one hidden step) to solve, without explicit CoT.
         evaluation: exact
-        evaluation_matches:
+        evaluation_answers:
           - Jer Bulsara
         system_prompt: ""
         difficulty_ratings:
           Length of Context: 1
           Reasoning Depth: 2
+          Instruction Compliance: 2
+      - name: msl2
+        display_name: multi-step logic (2 hidden steps)
+        description: Question aimed to require multi-step logic (two hidden steps) to solve, without explicit CoT.
+        evaluation: exact
+        evaluation_answers:
+          - Palmer Luckey
+        system_prompt: ""
+        difficulty_ratings:
+          Length of Context: 1
+          Reasoning Depth: 3
+          Instruction Compliance: 2
+      - name: msl3
+        display_name: multi-step logic (3 hidden steps)
+        description: Question aimed to require multi-step logic (three hidden steps) to solve, without explicit CoT.
+        evaluation: exact
+        evaluation_answers:
+          - Stephen King
+        system_prompt: ""
+        difficulty_ratings:
+          Length of Context: 1
+          Reasoning Depth: 4
+          Instruction Compliance: 2
+      - name: mcl1
+        display_name: Peruvian Animal
+        description: Question aimed to require multi-clue logic (two clues) to solve, without explicit CoT.
+        evaluation: exact
+        evaluation_answers:
+          - llama
+          - alpaca
+        system_prompt: ""
+        difficulty_ratings:
+          Length of Context: 1
+          Reasoning Depth: 2
+          Instruction Compliance: 2
+      - name: mcl2
+        display_name: Inglourious Actor
+        description: Question aimed to require multi-clue logic (three clues) to solve, without explicit CoT.
+        evaluation: exact
+        evaluation_answers:
+          - Christoph Waltz
+        system_prompt: ""
+        difficulty_ratings:
+          Length of Context: 1
+          Reasoning Depth: 3
+          Instruction Compliance: 2
+      - name: mcl3
+        display_name: Greek Mythological Creature
+        description: Question aimed to require multi-clue logic (four clues) to solve, without explicit CoT.
+        evaluation: exact
+        evaluation_answers:
+          - sphinx
+        system_prompt: ""
+        difficulty_ratings:
+          Length of Context: 1
+          Reasoning Depth: 4
           Instruction Compliance: 2

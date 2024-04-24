@@ -1,0 +1,1 @@
+In 1992, a company released the first 3D first-person shooter video game. In 2013, one of the co-founders of this company left in order to work full-time at another company. What is the name of founder of that other company? Do not include any reasoning or discussion, nor any decorations around the answer itself. Simply output the name with no punctuation or anything else.

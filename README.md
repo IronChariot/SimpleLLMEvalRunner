@@ -12,7 +12,7 @@ Evaluation metric is a score from 0 to 10. For perfect-match evaluations, this w
 - 0: Complete and utter failure to do anything remotely like correct reasoning or a correct answer
 - 1-4: Shows some level of understanding of the problem, but fails to correctly reason about it
 - 5: Gets it about equal parts right and wrong
-- 6-9: Gets the reasoning/recall mostly right, though might have a slight flaw in some of the reasoning
+- 6-9: Gets the reasoning/recall mostly right, and may get the answer completely right, but some of the reasoning is flawed or missing
 - 10: Perfect reasoning/recall leading to a correct answer
 
 TODO: When doing manual evaluation, instead of giving a 0-10 score, you can instead start typing a follow-up question, in case you want to maybe double check the LLM's understanding of something in the eval, or the 'reasoning' for its answer. The response will then be displayed, at which point you can then give your rating or ask more questions. The follow-up questions and responses will be included in the record of the responses.
