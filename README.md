@@ -6,6 +6,13 @@ Made in Python with just a couple of JSON files to define the large language mod
 
 The code for actually calling the LLM APIs assumes that you have your API keys in the appropriate environment variable, as defined in the API's documentation.
 
+# Evaluation Types
+
+Current, in the test_sets.yml file, the "evaluation" for each eval can be either 'exact', 'contains', or 'manual'.
+- 'exact' means the LLM's response must be exactly the single string given in the evaluation_answers array. The check is case insensitive, however.
+- 'contains' means that the LLM's response must contain all strings given in the evaluation_answers array. This check is also case insensitive.
+- 'manual' means that the user is presented with the prompt, the answer(s) listed in the evaluation_answers array, and the LLM's response, and must put in an evaluation score between 0 and 10.
+
 # Evaluation Ratings
 
 Evaluation metric is a score from 0 to 10. For perfect-match evaluations, this will only be 0 and 10. For model evaluation, the model will be asked to evaluate the answer with a word score (with a choice of 5 words describing how good the response is, which will then be translated to 0, 2.5, 5, 7.5 or 10). For manual evaluation, use your own judgement, but here is some guidance (mostly for myself):
