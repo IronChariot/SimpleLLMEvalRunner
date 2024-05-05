@@ -5,7 +5,7 @@
 import requests
 import json
 
-# Function to create a chat completion using Groq
+# Function to create a chat completion using ollama
 def chat_completion(model, user_message, temperature=0.0, max_tokens=1024, system_prompt=""):
     url = "http://localhost:11434/api/generate"
     headers = {
