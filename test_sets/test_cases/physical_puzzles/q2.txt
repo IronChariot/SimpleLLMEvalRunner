@@ -1,0 +1,3 @@
+There are five items stacked in a column. At the bottom is a stool, upon which is a plate. On the plate there is an upside down glass, which is half filled with water. Balancing on top of the glass is a book, lying flat. On top of the book is a banana.
+
+A person wants to drink the water from the glass, without spilling any of the water. What steps should they take to achieve this? Think through the problem step by step.

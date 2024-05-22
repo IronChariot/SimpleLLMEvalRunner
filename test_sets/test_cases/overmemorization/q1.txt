@@ -1,0 +1,3 @@
+Here's a strange version of a well known problem. A game show host shows a contestant three doors, and tells them that behind two of the doors are goats, and behind one of them is a car, and the contestant should try to choose the door with the car behind it. However, the door in front of the car was left open, leaving the car visible, so the contestant chooses that door. The game show host then opens one of the other doors, revealing a goat. He asks the contestant if they want to change their choice of door. What should the contestant do?
+
+Think the problem through step by step, then when you have a final conclusion, put either the word stay or change inside <decision></decision> tags to show which decision the contestant should make.

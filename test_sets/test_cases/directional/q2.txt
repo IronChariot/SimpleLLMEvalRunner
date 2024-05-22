@@ -1,0 +1,8 @@
+Given that POLICE goes to OIKUXW, what does FRIEND go to? Here's a clue: it only works if you are using a QWERTY keyboard.
+
+If you need a reminder, here is the layout of a QWERTY keyboard:
+QWERTYUIOP
+ASDFGHJKL
+ZXCVBNM
+
+Think the problem through step by step, and once you're reached a final conclusion, put just the answer inside <solution></solution> tags.

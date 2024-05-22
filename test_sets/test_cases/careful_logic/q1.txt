@@ -1,0 +1,5 @@
+Team A and Team B have been playing a game where each match must be won by one side or the other.
+So far, Team A has 8 wins, and Team B has 5 wins. There are 7 games left to be played between these two teams.
+What is the minimum number of extra wins Team B needs in order to guarantee that they end up with more wins overall than Team A?
+
+Think the problem through step by step, and when you've got your final answer, put it (in arabic numerals) within <solution></solution> tags.

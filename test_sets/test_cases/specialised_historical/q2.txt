@@ -1,0 +1,3 @@
+Which novel won the Booker Prize in 2020?
+
+Think the problem through step by step, and when you've got the answer, put the title of the novel inside <solution></solution> tags.

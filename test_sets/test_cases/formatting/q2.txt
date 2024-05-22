@@ -1,0 +1,38 @@
+```json
+{
+  "type": "room",
+  "color": "blue",
+  "contents": [
+    {
+      "type": "bed",
+      "color": "yellow"
+    },
+    {
+      "type": "toy box",
+      "color": "green",
+      "contents": [
+        {
+          "type": "bucket",
+          "color": "blue",
+          "contents": [
+            {
+              "type": "elephant",
+              "color": "pink"
+            }
+          ]
+        },
+        {
+          "type": "doll",
+          "color": "orange"
+        },
+        {
+          "type": "dinosaur",
+          "color": "red"
+        }
+      ]
+    }
+  ]
+}
+```
+
+Turn the above into the equivalent YAML.

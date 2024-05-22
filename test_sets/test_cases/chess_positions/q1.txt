@@ -1,0 +1,4 @@
+Here is a chess position in FEN format:
+rn2r1k1/1pq2p1p/p2p1bpB/3P4/P7/2PB4/5PPP/2R1R1K1 w - - 0 3
+
+What move should white make? Think it through step by step, and when you've reached a final answer, put the move in algebraic notation inside <solution></solution> tags.

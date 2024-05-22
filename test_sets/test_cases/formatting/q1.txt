@@ -1,0 +1,3 @@
+Take the following description of a room, and recreate it as a nested set of JSON objects, with each object having a type, a color and possibly contents.
+
+The room is blue, and contains a bed and a green toy box. Inside the toy box is a bucket, a doll, and a red dinosaur. Inside the bucket, which is blue, is a pink elephant. The bed is yellow. The doll is orange.

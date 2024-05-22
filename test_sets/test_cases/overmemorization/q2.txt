@@ -1,0 +1,3 @@
+A farmer with a sheep and a goat is standing on the left bank of a river with a boat. The boat has enough room for exactly one person and two animals. How can the farmer get himself and both the sheep and the goat to the right bank of the river in the fewest number of trips?
+
+Think the problem through step by step, then once you've reached your final conclusion, put the number of trips across the river that are required in <solution></solution> tags (specify the number in arabic numerals).

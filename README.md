@@ -8,19 +8,21 @@ The code for actually calling the LLM APIs assumes that you have your API keys i
 
 # Evaluation Types
 
-Current, in the test_sets.yml file, the "evaluation" for each eval can be either 'exact', 'contains', or 'manual'.
-- 'exact' means the LLM's response must be exactly the single string given in the evaluation_answers array. The check is case insensitive, however.
-- 'contains' means that the LLM's response must contain all strings given in the evaluation_answers array. This check is also case insensitive.
-- 'manual' means that the user is presented with the prompt, the answer(s) listed in the evaluation_answers array, and the LLM's response, and must put in an evaluation score between 0 and 10.
+Current, in the test_sets.yml file, the "evaluation" for each eval can be either 'exact', 'contains', or 'manual'. All string comparison evaluations are case insensitive.
+- 'exact' means the LLM's response must be exactly the single string given in the evaluation_answers array. 
+- 'contains' means that the LLM's response must contain the strings given in the evaluation_answers array, and is scored for each correct answer.
+- 'contains_all' means that the LLM's response must contain all strings given in the evaluation_answers array, and only gets a score if all answers were present.
+- 'automatic' uses a model (currently Llama 3 70B through Groq for a good mix of speed, quality and cost) to compare the given response to the reference answers, and give a full score if its finds that they match (this is not perfectly reliable).
+- 'manual' means that the user is presented with the prompt, the answer(s) listed in the evaluation_answers array, and the LLM's response, and must put in an evaluation score between 0 and 100.
 
 # Evaluation Ratings
 
-Evaluation metric is a score from 0 to 10. For perfect-match evaluations, this will only be 0 and 10. For model evaluation, the model will be asked to evaluate the answer with a word score (with a choice of 5 words describing how good the response is, which will then be translated to 0, 2.5, 5, 7.5 or 10). For manual evaluation, use your own judgement, but here is some guidance (mostly for myself):
+Evaluation metric is a score from 0 to 100. For exact match or 'contains all' evaluations, this will only be 0 and 100. For automatic model-based evaluation, the model will be asked if the provided answer matches the provided correct answer, giving a boolean answer, which will be translated to 0 or 100. For manual evaluation, use your own judgement, but here is some guidance (mostly for myself):
 - 0: Complete and utter failure to do anything remotely like correct reasoning or a correct answer
-- 1-4: Shows some level of understanding of the problem, but fails to correctly reason about it
-- 5: Gets it about equal parts right and wrong
-- 6-9: Gets the reasoning/recall mostly right, and may get the answer completely right, but some of the reasoning is flawed or missing
-- 10: Perfect reasoning/recall leading to a correct answer
+- 1-40: Shows some level of understanding of the problem, but fails to correctly reason about it
+- 41-60: Gets it about equal parts right and wrong
+- 61-90: Gets the reasoning/recall mostly right, and may get the answer completely right, but some of the reasoning is flawed or missing
+- 91-100: Perfect reasoning/recall leading to a correct answer
 
 # Difficulty Ratings:
 
@@ -51,8 +53,8 @@ Example: asking for a direct answer without any discussion, CoT or any extraneou
 
 ## TODO
 - [ ] Create a view of the results in more details, specifically a cross reference of how each model (down the left) do against each problem (across the top), as well as a view of the results where we should how well each model does in each of the difficulty categories.
-- [ ] When doing manual evaluation, instead of giving a 0-10 score, you can instead start typing a follow-up question, in case you want to maybe double check the LLM's understanding of something in the eval, or the 'reasoning' for its answer. The response will then be displayed, at which point you can then give your rating or ask more questions. The follow-up questions and responses will be included in the record of the responses.
-- [ ] Allow a chosen LLM to evaluate a response, instead of having the user do it. Should use word-type evaluation scores that we can translate to a 0-10 score, rather than asking for a numeric score directly.
+- [ ] When doing manual evaluation, instead of giving a 0-100 score, you can instead start typing a follow-up question, in case you want to maybe double check the LLM's understanding of something in the eval, or the 'reasoning' for its answer. The response will then be displayed, at which point you can then give your rating or ask more questions. The follow-up questions and responses will be included in the record of the responses.
+- [x] Allow a chosen LLM to evaluate a response, instead of having the user do it.
 
 ## Thanks
 

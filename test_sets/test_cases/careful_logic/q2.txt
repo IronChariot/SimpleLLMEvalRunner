@@ -1,0 +1,3 @@
+Sarah has five brothers. Each brother has three sisters. How many sisters does Sarah have?
+
+Think the problem through step by step, and when you have your final answer, put in (in arabic numerals) inside <solution></solution> tags.

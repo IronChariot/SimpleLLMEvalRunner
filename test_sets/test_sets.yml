@@ -1,124 +1,166 @@
 test_sets:
-  - set_name: tcotgi
-    set_display_name: The Case of the Golden Idol
+  - set_name: directional
+    set_display_name: Directional Questions
     test_cases:
-      - name: case1
-        display_name: Case 1
-        description: The first level from The Case of the Golden Idol video game, transcribed into text. Covers very
-          basic deduction with multiple clues pointing to correct solutions, direct pattern matching, and no red
-          herrings.
+      - name: q1
+        display_name: London-Edinburgh type question
+        description: A question about direction modelling, with cardinal and relative directions
+        evaluation: contains_all
+        evaluation_answers:
+          - <lateral>left</lateral>
+          - <axial>behind</axial>
+        system_prompt: ""
+        repeat: 20
+      - name: q2
+        display_name: Keyboard cypher
+        description: A question about direction modelling, about a simple directional keyboard cypher
         evaluation: contains
         evaluation_answers:
-          - The men's camp is at the Horn of Thumb
-          - The brown haired man's full name is Albert Cloudsley
-          - The black haired man's full name is Oberon Geller
-          - Albert Cloudsley pushed Oberon Geller from a cliff in the Horn of Thumb on Monkey Paw Island
+          - <solution>DEUWBS</solution>
         system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 3
-          Reasoning Depth: 2
-          Instruction Compliance: 3
-      - name: case2
-        display_name: Case 2
-        description: The second level from The Case of the Golden Idol video game, transcribed into text. Covers basic
-          deduction with clues pointing to correct solutions, mixed direct and indirect pattern matching, and one red
-          herring.
-        evaluation: manual
-        evaluation_answers:
-          - The blue attire is the dinning attire.
-          - The white attire is the research attire.
-          - The brown attire is the hunting attire.
-          - The full name of the man on the bed is Sebastian Cloudsley.
-          - Sebastian Cloudsley, Lord of Blackfield, passed away in his bed. The cause of death was a head wound which occurred when he fell from a horse while he was hunting.
-        system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 3
-          Reasoning Depth: 5
-          Instruction Compliance: 2
-      - name: case2b
-        display_name: Case 2 (with theory-building prompt)
-        description: The second level from The Case of the Golden Idol video game, transcribed into text. Covers basic
-          deduction with clues pointing to correct solutions, mixed direct and indirect pattern matching, and one red
-          herring. Prompt instructs the model to reason through the problem by coming up with multiple theories.
-        evaluation: manual
-        evaluation_answers:
-          - The blue attire is the dinning attire.
-          - The white attire is the research attire.
-          - The brown attire is the hunting attire.
-          - The full name of the man on the bed is Sebastian Cloudsley.
-          - Sebastian Cloudsley, Lord of Blackfield, passed away in his bed. The cause of death was a head wound which occurred when he fell from a horse while he was hunting.
-        system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 3
-          Reasoning Depth: 5
-          Instruction Compliance: 2
-  - set_name: no_cot_logic
-    set_display_name: Multi-Step or Multi-Clue Logic without Chain of Thought
+        repeat: 20
+  - set_name: overmemorization
+    set_display_name: Overmemorization
     test_cases:
-      - name: msl1
-        display_name: multi-step logic (1 hidden step)
-        description: Question aimed to require multi-step logic (one hidden step) to solve, without explicit CoT.
-        evaluation: exact
+      - name: q1
+        display_name: Fake Monty Hall Problem
+        description: A question with an obvious simplified Monty Hall problem
+        evaluation: contains
         evaluation_answers:
-          - Jer Bulsara
+          - <decision>stay</decision>
         system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 1
-          Reasoning Depth: 2
-          Instruction Compliance: 2
-      - name: msl2
-        display_name: multi-step logic (2 hidden steps)
-        description: Question aimed to require multi-step logic (two hidden steps) to solve, without explicit CoT.
-        evaluation: exact
+        repeat: 20
+      - name: q2
+        display_name: Fake Animals and Boat Problem
+        description: A question with an obvious simplified Monty Hall problem (h/t Colin Fraser)
+        evaluation: contains
         evaluation_answers:
-          - Palmer Luckey
+          - <solution>1</solution>
         system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 1
-          Reasoning Depth: 3
-          Instruction Compliance: 2
+        repeat: 20
+  - set_name: specialised_historical
+    set_display_name: Specialised Historical Knowledge
+    test_cases:
+      - name: q1
+        display_name: Paraglider flight record in 2021
+        description: Who held the record for longest paraglider flight (in terms of distance) in 2021
+        evaluation: contains
+        evaluation_answers:
+          - Sebastien Kayrouz
+        system_prompt: ""
+        repeat: 20
+      - name: q2
+        display_name: Booker Prize winner 2020
+        description: Which novel won the Booker Prize in 2020
+        evaluation: contains
+        evaluation_answers:
+          - Shuggie Bain
+        system_prompt: ""
+        repeat: 20
+  - set_name: chess_positions
+    set_display_name: Chess Positions
+    test_cases:
+      - name: q1
+        display_name: FEN Formatted Position
+        description: A board position in FEN format, asking for best move for white
+        evaluation: contains_one
+        evaluation_answers:
+          - Re8
+          - Rxe8
+          - e1e8
+        system_prompt: ""
+        repeat: 20
+      - name: q2
+        display_name: PGN Formatted Position
+        description: A game described in PGN format, asking for best move for white
+        evaluation: contains_one
+        evaluation_answers:
+          - a5
+          - Ne4
+          - Qa2
+        system_prompt: ""
+        repeat: 20
+      - name: q3
+        display_name: PGN Easy Move
+        description: A board position in PGN format, asking for best move for white
+        evaluation: contains
+        evaluation_answers:
+          - Nxb5
+        system_prompt: ""
+        repeat: 20
+  - set_name: careful_logic
+    set_display_name: Careful Logic
+    test_cases:
+      - name: q1
+        display_name: Team A and Team B
+        description: A question which requires fairly careful step by step logic
+        evaluation: contains
+        evaluation_answers:
+          - <solution>6</solution>
+        system_prompt: ""
+        repeat: 20
+      - name: q2
+        display_name: Brothers who have sisters
+        description: A question which requires fairly careful step by step logic and understanding of family relations
+        evaluation: contains
+        evaluation_answers:
+          - <solution>2</solution>
+        system_prompt: ""
+        repeat: 20
+  - set_name: no_cot_logic
+    set_display_name: Multistep Logic with no CoT Allowed
+    test_cases:
       - name: msl3
-        display_name: multi-step logic (3 hidden steps)
-        description: Question aimed to require multi-step logic (three hidden steps) to solve, without explicit CoT.
+        display_name: Author of Book of Movie
+        description: A question which requires multiple steps of logic, but we insist on an immediate answer with no CoT
         evaluation: exact
         evaluation_answers:
           - Stephen King
         system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 1
-          Reasoning Depth: 4
-          Instruction Compliance: 2
-      - name: mcl1
-        display_name: Peruvian Animal
-        description: Question aimed to require multi-clue logic (two clues) to solve, without explicit CoT.
+        repeat: 20
+      - name: msl2
+        display_name: Founder of VR Company
+        description: A question which requires multiple steps of logic, but we insist on an immediate answer with no CoT
         evaluation: exact
         evaluation_answers:
-          - llama
-          - alpaca
+          - Palmer Luckey
         system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 1
-          Reasoning Depth: 2
-          Instruction Compliance: 2
-      - name: mcl2
-        display_name: Inglourious Actor
-        description: Question aimed to require multi-clue logic (three clues) to solve, without explicit CoT.
-        evaluation: exact
+        repeat: 20
+  - set_name: cot_logic
+    set_display_name: Multistep Logic with CoT Allowed
+    test_cases:
+      - name: msl3
+        display_name: Author of Book of Movie
+        description: A question which requires multiple steps of logic, and we insist on an immediate answer with CoT
+        evaluation: contains
         evaluation_answers:
-          - Christoph Waltz
+          - Stephen King
         system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 1
-          Reasoning Depth: 3
-          Instruction Compliance: 2
-      - name: mcl3
-        display_name: Greek Mythological Creature
-        description: Question aimed to require multi-clue logic (four clues) to solve, without explicit CoT.
-        evaluation: exact
+        repeat: 20
+      - name: msl2
+        display_name: Founder of VR Company
+        description: A question which requires multiple steps of logic, and we insist on an immediate answer with CoT
+        evaluation: contains
         evaluation_answers:
-          - sphinx
+          - Palmer Luckey
         system_prompt: ""
-        difficulty_ratings:
-          Length of Context: 1
-          Reasoning Depth: 4
-          Instruction Compliance: 2
+        repeat: 20
+  - set_name: physical_puzzles
+    set_display_name: Physical Puzzles
+    test_cases:
+      - name: q1
+        display_name: Glass Sphere
+        description: A test to see if the AI can recognize the relevant limitations of its tools and think outside the obvious (wrong) answer
+        evaluation: manual
+        evaluation_answers:
+          - As the string is only as long as the radius of the sphere, it cannot reach the ticket at the bottom, no matter what approach is taken. A combination of dangling something sticky into the sphere, then using the hair dryer to blow air into the sphere in order to get the ticket to fly around and stick to something which can then be pulled out is the only solution.
+        system_prompt: ""
+        repeat: 10
+      - name: q2
+        display_name: Stacked Objects
+        description: A test to see if the AI can recognize the constraints on a particular physical situation
+        evaluation: manual
+        evaluation_answers:
+          - Objects on top of the glass should be taken off, and then the glass and the plate beneath it should be flipped upside down together so that the opening of the glass is blocked by the plate throughout, until the glass is the right way up and the plate can be removed.
+        system_prompt: ""
+        repeat: 10

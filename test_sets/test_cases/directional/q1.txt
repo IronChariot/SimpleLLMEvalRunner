@@ -1,0 +1,3 @@
+If I am standing in London, facing south east, is Edinburgh more to my left or my right, and more in front of me or behind me? 
+
+Think the problem through step by step, then when you have come to a final conclusion, put the answer to whether it is to my left or right inside <lateral></lateral> tags (with just the word left or right inside), and whether it is behind me or in front of me in <axial></axial> tags (again, with just the word front or behind inside the tags). 

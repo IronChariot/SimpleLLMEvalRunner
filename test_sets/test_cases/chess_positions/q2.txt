@@ -1,0 +1,16 @@
+[Event "Titled Cup 2024"]
+[Site "Chess.com"]
+[Date "2024.05.07"]
+[Round "11"]
+[White "Carlsen, Magnus"]
+[Black "Nakamura, Hikaru"]
+[Result "1-0"]
+[WhiteElo "3208"]
+[BlackElo "3231"]
+[TimeControl "180+2"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 Bc5 5. c3 d5 6. Nbd2 O-O 7. exd5 Qxd5 8.
+Bc4 Qd8 9. b4 Be7 10. O-O a6 11. a4 Nd5 12. Qc2 Re8 13. Re1 Bf8 14. d4 Nb6 15.
+Bb3 Qf6
+
+What move should white play? Think the problem through step by step, then when you have come to your final conclusion, put your answer in algebraic notation inside <solution></solution> tags.
